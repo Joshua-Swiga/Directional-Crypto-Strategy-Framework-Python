@@ -39,6 +39,6 @@ Designed for **Bitcoin (BTC), Ethereum (ETH), Solana (SOL)** and similar high-li
 
 ### Installation
 ```bash
-git clone https://github.com/YOUR-USERNAME/Crypto-Regression-Pattern-Trader.git
+git clone https://github.com/Joshua-Swiga/Directional-Crypto-Strategy-Framework-Python.git
 cd Crypto-Regression-Pattern-Trader
 pip install -r requirements.txt
