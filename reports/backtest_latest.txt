@@ -1,0 +1,26 @@
+Backtest Report (MVP)
+Generated: 2026-02-19 14:33:49
+
+SUMMARY
+Model: linear_regression
+Target: returns
+Allow short: False
+Threshold: None
+Fee bps: 5.0
+Slippage bps: 2.0
+Spread bps: 0.0
+Max leverage: 1.0
+Vol target annual: None
+
+Mode: walk_forward
+Test bars: 
+Windows: 46
+Turns: 
+Exposure: 
+Total return: 5.09%
+Max drawdown: -0.07%
+Sharpe (approx): 0.962
+Hit rate: 
+
+Trades saved to: (not generated)
+Window stats saved to: backtest_latest_windows.csv

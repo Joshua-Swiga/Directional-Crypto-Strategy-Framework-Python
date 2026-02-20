@@ -1,0 +1,35 @@
+
+FEATURE SELECTION & VALIDATION SUMMARY
+========================================
+
+Original Features: 17
+Selected ML Features: 2
+
+Redundant Features Removed:
+  - Close prediction: 9 removed
+  - Returns prediction: 9 removed
+
+Strong Predictors Selected:
+  - Future Close: 2 features
+  - Future Returns: 0 features
+
+Out-of-Sample Validation:
+  - Train: 7983 samples (80.0%)
+  - Test: 1996 samples (20.0%)
+
+Model Performance (Linear Regression Baseline):
+  Future Close:
+    Train R2: 0.9992
+    Test R2:  0.9988
+    Test RMSE: 308.194786
+  
+  Future Returns:
+    Train R2: 0.0020
+    Test R2:  -0.0042
+    Test RMSE: 0.004280
+
+Next Steps:
+  1. Use ml_ready_features.csv for advanced ML models
+  2. Consider feature engineering (lags, interactions)
+  3. Try non-linear models (Random Forest, XGBoost, Neural Networks)
+  4. Implement walk-forward validation for time series
