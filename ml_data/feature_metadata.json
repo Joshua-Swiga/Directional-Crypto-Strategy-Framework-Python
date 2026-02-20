@@ -1,0 +1,78 @@
+{
+  "original_features": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "quote_volume",
+    "num_trades",
+    "close_sma_10",
+    "candle_body",
+    "candle_range",
+    "volatility",
+    "bb_upper",
+    "bb_middle",
+    "bb_lower",
+    "garman_klass",
+    "rsi",
+    "atr"
+  ],
+  "ml_features": [
+    "close",
+    "num_trades"
+  ],
+  "features_for_close": [
+    "close",
+    "volume",
+    "num_trades",
+    "candle_body",
+    "candle_range",
+    "volatility",
+    "rsi",
+    "atr"
+  ],
+  "features_for_returns": [
+    "close",
+    "volume",
+    "num_trades",
+    "candle_body",
+    "candle_range",
+    "volatility",
+    "rsi",
+    "atr"
+  ],
+  "strong_predictors_close": [
+    "close",
+    "num_trades"
+  ],
+  "strong_predictors_returns": [],
+  "train_size": 7983,
+  "test_size": 1996,
+  "validation_metrics": {
+    "close": {
+      "train": {
+        "rmse": 305.65333860205226,
+        "mae": 181.18673527194636,
+        "r2": 0.9992192877585107
+      },
+      "test": {
+        "rmse": 308.19478580012486,
+        "mae": 196.17107109935642,
+        "r2": 0.9987555847872296
+      }
+    },
+    "returns": {
+      "train": {
+        "rmse": 0.003051383913345641,
+        "mae": 0.0018488257737559325,
+        "r2": 0.002014163091474175
+      },
+      "test": {
+        "rmse": 0.004280491933018603,
+        "mae": 0.002646765044947814,
+        "r2": -0.004229212196580789
+      }
+    }
+  }
+}

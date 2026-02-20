@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-02-19 14:33:47",
+  "rows": [
+    {
+      "model": "linear_regression",
+      "target": "close",
+      "rmse": 308.19478580012486,
+      "mae": 196.17107109935642,
+      "r2": 0.9987555847872296,
+      "mape_pct": 0.2651985850433647
+    },
+    {
+      "model": "linear_regression",
+      "target": "returns",
+      "rmse": 0.004280491933018573,
+      "mae": 0.0026467650449477674,
+      "r2": -0.004229212196580567,
+      "mape_pct": 169.605735581043
+    },
+    {
+      "model": "random_forest",
+      "target": "close",
+      "rmse": 10487.73113334013,
+      "mae": 8257.522400126703,
+      "r2": -0.4410459468323611,
+      "mape_pct": 11.94266209688215
+    },
+    {
+      "model": "random_forest",
+      "target": "returns",
+      "rmse": 0.006752544086515959,
+      "mae": 0.005112919060924539,
+      "r2": -1.499081049638904,
+      "mape_pct": 1353.1945196567447
+    },
+    {
+      "model": "svr",
+      "target": "close",
+      "rmse": 19420.660584922498,
+      "mae": 17039.812657426737,
+      "r2": -3.9413172076814433,
+      "mape_pct": 24.070983279932967
+    },
+    {
+      "model": "svr",
+      "target": "returns",
+      "rmse": 0.010135658283806847,
+      "mae": 0.00939947637084513,
+      "r2": -4.630531663195444,
+      "mape_pct": 49874.877214171865
+    },
+    {
+      "model": "neural_network",
+      "target": "close",
+      "rmse": 15376.633800391792,
+      "mae": 11481.280225904386,
+      "r2": -2.0976852031079507,
+      "mape_pct": 16.718287869989325
+    },
+    {
+      "model": "neural_network",
+      "target": "returns",
+      "rmse": 0.008145130409635291,
+      "mae": 0.005880785082606627,
+      "r2": -2.636148142893654,
+      "mape_pct": 3949.157086486845
+    },
+    {
+      "model": "ensemble",
+      "target": "close",
+      "rmse": 8392.142130657605,
+      "mae": 6759.952386003426,
+      "r2": 0.07730025825665687,
+      "mape_pct": 9.728647891292832
+    },
+    {
+      "model": "ensemble",
+      "target": "returns",
+      "rmse": 0.0046744199439240006,
+      "mae": 0.0031546562701569017,
+      "r2": -0.1975700802822291,
+      "mape_pct": 10099.813957829652
+    }
+  ],
+  "errors": [
+    [
+      "xgboost",
+      "[Errno 2] No such file or directory: 'c:\\\\Users\\\\JoshuaSwiga\\\\Desktop\\\\strat\\\\Models\\\\xgboost\\\\xgboost_close.pkl'"
+    ],
+    [
+      "arima",
+      "[Errno 2] No such file or directory: 'c:\\\\Users\\\\JoshuaSwiga\\\\Desktop\\\\strat\\\\Models\\\\arima\\\\arima_close.pkl'"
+    ]
+  ]
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Backtest Report</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .muted { color: #666; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; }
+    h1 { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Backtest Report</h1>
+  <div class="muted">Generated: 2026-02-19 14:33:49</div>
+
+  <div class="grid" style="margin-top:16px;">
+    <div class="card">
+      <h2>Summary</h2>
+      <ul>
+        <li><b>Model</b>: linear_regression</li>
+        <li><b>Target</b>: returns</li>
+        <li><b>Total return</b>: 5.09%</li>
+        <li><b>Max drawdown</b>: -0.07%</li>
+        <li><b>Sharpe</b>: 0.962</li>
+        <li><b>Exposure</b>: 0.00%</li>
+        <li><b>Turns</b>: 0</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Equity Curve</h2>
+      <img src='backtest_latest_equity.png' style='max-width:100%;' />
+    </div>
+  </div>
+
+  <h2 style="margin-top:20px;">Trades</h2>
+  <table id="trades" class="display" style="width:100%">
+    <thead>
+      <tr><th>Entry</th><th>Exit</th><th>Side</th><th>Entry Px</th><th>Exit Px</th><th>PnL %</th><th>Bars</th></tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+  <h2 style="margin-top:20px;">Walk-forward windows</h2>
+  <table id="windows" class="display" style="width:100%">
+    <thead>
+      <tr><th>Window</th><th>Train (start-end)</th><th>Test (start-end)</th><th>Return %</th><th>Max DD %</th><th>Sharpe</th><th>Turns</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>0</td><td>0-600</td><td>600-800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>1</td><td>200-800</td><td>800-1000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>2</td><td>400-1000</td><td>1000-1200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>3</td><td>600-1200</td><td>1200-1400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>4</td><td>800-1400</td><td>1400-1600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>5</td><td>1000-1600</td><td>1600-1800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>6</td><td>1200-1800</td><td>1800-2000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>7</td><td>1400-2000</td><td>2000-2200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>8</td><td>1600-2200</td><td>2200-2400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>9</td><td>1800-2400</td><td>2400-2600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>10</td><td>2000-2600</td><td>2600-2800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>11</td><td>2200-2800</td><td>2800-3000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>12</td><td>2400-3000</td><td>3000-3200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>13</td><td>2600-3200</td><td>3200-3400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>14</td><td>2800-3400</td><td>3400-3600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>15</td><td>3000-3600</td><td>3600-3800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>16</td><td>3200-3800</td><td>3800-4000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>17</td><td>3400-4000</td><td>4000-4200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>18</td><td>3600-4200</td><td>4200-4400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>19</td><td>3800-4400</td><td>4400-4600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>20</td><td>4000-4600</td><td>4600-4800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>21</td><td>4200-4800</td><td>4800-5000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>22</td><td>4400-5000</td><td>5000-5200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>23</td><td>4600-5200</td><td>5200-5400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>24</td><td>4800-5400</td><td>5400-5600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>25</td><td>5000-5600</td><td>5600-5800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>26</td><td>5200-5800</td><td>5800-6000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>27</td><td>5400-6000</td><td>6000-6200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>28</td><td>5600-6200</td><td>6200-6400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>29</td><td>5800-6400</td><td>6400-6600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>30</td><td>6000-6600</td><td>6600-6800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>31</td><td>6200-6800</td><td>6800-7000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>32</td><td>6400-7000</td><td>7000-7200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>33</td><td>6600-7200</td><td>7200-7400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>34</td><td>6800-7400</td><td>7400-7600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>35</td><td>7000-7600</td><td>7600-7800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>36</td><td>7200-7800</td><td>7800-8000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>37</td><td>7400-8000</td><td>8000-8200</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>38</td><td>7600-8200</td><td>8200-8400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>39</td><td>7800-8400</td><td>8400-8600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>40</td><td>8000-8600</td><td>8600-8800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>41</td><td>8200-8800</td><td>8800-9000</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>42</td><td>8400-9000</td><td>9000-9200</td><td>5.09</td><td>-0.07</td><td>6.527</td><td>2</td></tr><tr><td>43</td><td>8600-9200</td><td>9200-9400</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>44</td><td>8800-9400</td><td>9400-9600</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr><tr><td>45</td><td>9000-9600</td><td>9600-9800</td><td>0.00</td><td>0.00</td><td>0.000</td><td>0</td></tr>
+    </tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#trades').DataTable({ pageLength: 25 });
+      $('#windows').DataTable({ pageLength: 25 });
+    });
+  </script>
+</body>
+</html>
